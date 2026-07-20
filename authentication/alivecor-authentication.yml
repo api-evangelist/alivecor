@@ -1,0 +1,22 @@
+generated: '2026-07-17'
+method: searched
+source: https://alivecor.com/data-integration
+docs: https://alivecor.com/data-integration
+note: >-
+  Derived from the published data-integration description; AliveCor does not
+  expose a public OpenAPI or developer portal (API access is gated behind a
+  commercial agreement), so this profile reflects the documented auth model
+  rather than a machine-readable spec.
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+- name: apiKey
+  type: apiKey
+  in: header
+  description: >-
+    The AliveCor API (cloud access to patient ECG data via KardiaPro) uses
+    standard REST over HTTPS with API-key authentication, described by AliveCor
+    as supporting HIPAA-compliant access to patient data.
+  sources: [https://alivecor.com/data-integration]
