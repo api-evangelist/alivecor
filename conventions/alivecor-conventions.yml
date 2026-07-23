@@ -1,0 +1,30 @@
+generated: '2026-07-17'
+method: searched
+source: https://alivecor.com/data-integration
+note: >-
+  Cross-cutting semantics captured from the published data-integration
+  description. No public OpenAPI or developer reference is available (API access
+  is gated), so only the documented conventions are recorded. Idempotency,
+  pagination, and error-envelope shapes are not publicly documented and are
+  therefore left unasserted (no fabrication).
+authentication:
+  style: api-key
+  location: header
+  ref: authentication/alivecor-authentication.yml
+transport:
+  protocol: REST over HTTPS
+events:
+  style: webhooks
+  description: >-
+    The AliveCor API emits webhook notifications when a new ECG becomes
+    available for a provisioned patient.
+  ref: asyncapi/alivecor-kardiapro-webhooks.yml
+data_formats:
+- PDF
+- raw ECG time-series
+idempotency:
+  documented: false
+pagination:
+  documented: false
+error_envelope:
+  documented: false

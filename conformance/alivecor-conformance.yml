@@ -1,0 +1,31 @@
+generated: '2026-07-17'
+method: searched
+source: https://alivecor.com/security
+docs: https://alivecor.com/security
+note: >-
+  Compliance / standards posture published on AliveCor's security and trust
+  pages. AliveCor publishes attestations under the Schellman certificate
+  directory. No public OpenAPI is available, so API-technical conformance
+  (RFC 9457, pagination, idempotency) is left unasserted.
+standards:
+- id: hipaa
+  conforms: true
+  evidence: security page — HIPAA Security Rule and Breach Notification Rule adherence
+- id: soc2-type2
+  conforms: true
+  evidence: security page — SOC 2 Type 2
+- id: iso27001
+  conforms: true
+  evidence: security page — ISO/IEC 27001 information security management
+- id: iso42001
+  conforms: true
+  evidence: security page — ISO/IEC 42001 AI management system
+- id: hitrust-e1
+  conforms: true
+  evidence: security page — HITRUST e1 certification (Kardia, KardiaPro, KardiaComplete)
+- id: gdpr
+  conforms: true
+  evidence: trust page — GDPR
+- id: fda-cleared
+  conforms: true
+  evidence: FDA-cleared ECG AI algorithms (rhythm classification)

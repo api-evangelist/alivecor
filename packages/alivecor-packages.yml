@@ -1,0 +1,25 @@
+generated: '2026-07-17'
+method: searched
+source: https://github.com/alivecor
+note: >-
+  AliveCor's marquee mobile SDK (Android/iOS) that embeds their FDA-cleared ECG
+  recording + rhythm-classification algorithms is distributed under a commercial
+  agreement (request access via https://alivecor.com/data-integration) and is not
+  published to a public registry. The packages below are the first-party
+  open-source libraries AliveCor publishes on their GitHub organization for
+  working with the AliveCor ATC ECG data format.
+packages:
+- language: python
+  registry: github
+  name: ATCpy
+  url: https://github.com/alivecor/ATCpy
+  install: pip install git+https://github.com/alivecor/ATCpy.git
+  official: true
+  description: Python library for reading/parsing the AliveCor ATC ECG file format.
+- language: go
+  registry: github
+  name: atc2json
+  url: https://github.com/alivecor/atc2json
+  install: go get github.com/alivecor/atc2json
+  official: true
+  description: Go utility that converts AliveCor ATC ECG recordings to JSON.

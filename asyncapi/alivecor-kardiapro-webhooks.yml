@@ -1,0 +1,18 @@
+generated: '2026-07-17'
+method: searched
+source: https://alivecor.com/data-integration
+spec_type: Webhooks
+note: >-
+  AliveCor documents webhook notifications on the AliveCor API (KardiaPro cloud
+  access) but does not publish an AsyncAPI document or a public event-schema
+  reference. This captures the documented webhook surface only; message payload
+  schemas are not publicly published and are not fabricated here.
+webhooks:
+- name: ecg.available
+  summary: A new ECG recording is available for a provisioned patient.
+  description: >-
+    AliveCor's data-integration documentation states the API "features webhook
+    notifications for new ECG availability," letting an integrating system pull
+    the recording (PDF and raw time-series) as it is captured.
+  delivery: HTTP POST callback
+  auth: API key (HIPAA-compliant)

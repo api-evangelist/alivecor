@@ -1,7 +1,30 @@
 aid: alivecor
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alivecor.png
 name: Alivecor
-description: Alivecor is a company surfaced as a portfolio company of khosla-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  AliveCor is a digital health company building FDA-cleared, AI-powered personal
+  ECG hardware (KardiaMobile 6L, KardiaMobile Card, and the 12-lead Kardia 12L)
+  and cardiac-care software (KardiaPro, KardiaStation, KardiaComplete) for
+  consumers, clinicians, health systems, biopharma, and payers/employers. Its
+  algorithms detect atrial fibrillation, tachycardia, bradycardia, and normal
+  sinus rhythm from a single recording. For developers and partners AliveCor
+  offers a data-integration layer: Android/iOS SDKs that embed its FDA-cleared
+  ECG recording and rhythm-classification algorithms, a HIPAA-compliant REST API
+  (KardiaPro cloud) with API-key authentication and webhook notifications for new
+  ECG availability, and EHR integration such as GE Healthcare MUSE NX. API/SDK
+  access is gated behind a commercial agreement. Backed by Khosla Ventures.
 url: https://raw.githubusercontent.com/api-evangelist/alivecor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,7 +37,28 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
-apis: []
+- Digital Health
+- ECG
+- Cardiology
+- Medical Devices
+- Remote Patient Monitoring
+- Artificial Intelligence
+- Health Data
+apis:
+- name: AliveCor API
+  description: >-
+    HIPAA-compliant REST API providing cloud access to patient ECG data via
+    KardiaPro — account management, patient provisioning, and webhook
+    notifications for new ECG availability. Access is gated behind a commercial
+    agreement; no public OpenAPI or developer reference is published.
+  humanURL: https://alivecor.com/data-integration
+  properties:
+  - type: Authentication
+    url: authentication/alivecor-authentication.yml
+  - type: Webhooks
+    url: asyncapi/alivecor-kardiapro-webhooks.yml
+  - type: Conventions
+    url: conventions/alivecor-conventions.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +67,46 @@ maintainers:
 common:
 - type: Website
   url: https://www.alivecor.com/
+- type: DeveloperPortal
+  url: https://alivecor.com/data-integration
+- type: Support
+  url: https://alivecor.zendesk.com/hc/en-us
+- type: Blog
+  url: https://alivecor.com/press
+- type: GitHubOrganization
+  url: https://github.com/alivecor
+- type: SignUp
+  url: https://kardia.com/
+- type: PrivacyPolicy
+  url: https://alivecor.com/privacy
+- type: TermsOfService
+  url: https://alivecor.com/tos
+- type: Compliance
+  url: https://alivecor.com/security
+- type: TrustCenter
+  url: security/alivecor-trust-center.yml
+- type: Security
+  url: https://alivecor.com/vulnerability-disclosure
+- type: VulnerabilityDisclosure
+  url: security/alivecor-vulnerability-disclosure.yml
+- type: Conformance
+  url: conformance/alivecor-conformance.yml
+- type: DomainSecurity
+  url: security/alivecor-domain-security.yml
+- type: Authentication
+  url: authentication/alivecor-authentication.yml
+- type: Conventions
+  url: conventions/alivecor-conventions.yml
+- type: Webhooks
+  url: asyncapi/alivecor-kardiapro-webhooks.yml
+- type: Packages
+  url: packages/alivecor-packages.yml
+- type: SDKs
+  url: packages/alivecor-packages.yml
+- type: LLMsTxt
+  url: llms/alivecor-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

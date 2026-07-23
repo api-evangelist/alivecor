@@ -1,0 +1,19 @@
+generated: '2026-07-17'
+method: searched
+host: https://alivecor.com
+note: >-
+  Probed the canonical host (www.alivecor.com 301-redirects to alivecor.com).
+  No /.well-known/ discovery documents are published. Recorded for auditability;
+  absence is valid data. No WellKnown/SecurityTxt pointer is emitted since
+  nothing returned 200.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
