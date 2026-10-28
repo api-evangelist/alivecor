@@ -64,6 +64,100 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Alivecor is a company surfaced as a portfolio company of khosla-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+AliveCor is a digital health company building FDA-cleared, AI-powered personal ECG hardware (KardiaMobile 6L, KardiaMobile Card, and the 12-lead Kardia 12L) and cardiac-care software (KardiaPro, KardiaStation, KardiaComplete) for consumers, clinicians, health systems, biopharma, and payers/employers. Its algorithms detect atrial fibrillation, tachycardia, bradycardia, and normal sinus rhythm from a single recording. For developers and partners AliveCor offers a data-integration layer: Android/iOS SDKs that embed its FDA-cleared ECG recording and rhythm-classification algorithms, a HIPAA-compliant REST API (KardiaPro cloud) with API-key authentication and webhook notifications for new ECG availability, and EHR integration such as GE Healthcare MUSE NX. API/SDK access is gated behind a commercial agreement. Backed by Khosla Ventures.
 
-Backed by: khosla-ventures — https://www.alivecor.com/
+**Areas:** Company · Digital Health · ECG · Cardiology · Medical Devices · Remote Patient Monitoring · Artificial Intelligence · Health Data
+
+## Alivecor on APIs.io
+
+Everything profiled for Alivecor is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/alivecor/](https://apis.io/providers/alivecor/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [AliveCor API](https://apis.io/apis/alivecor/alivecor-api/) — HIPAA-compliant REST API providing cloud access to patient ECG data via KardiaPro — account management, patient provisioning, and webhook notifications for…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Alivecor Kardiapro Webhooks](https://apis.io/asyncapis/alivecor/alivecor-kardiapro-webhooks/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Alivecor Authentication](https://apis.io/security/alivecor/alivecor-authentication/)
+- [Alivecor Domain Security](https://apis.io/security/alivecor/alivecor-domain-security/)
+- [Alivecor Trust Center](https://apis.io/security/alivecor/alivecor-trust-center/)
+- [Alivecor Vulnerability Disclosure](https://apis.io/security/alivecor/alivecor-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.alivecor.com/)
+- [Sign up](https://kardia.com/)
+- [Support](https://alivecor.zendesk.com/hc/en-us)
+- [Blog](https://alivecor.com/press)
+- [Security](https://alivecor.com/vulnerability-disclosure)
+- [Compliance](https://alivecor.com/security)
+- [Terms of service](https://alivecor.com/tos)
+- [Privacy policy](https://alivecor.com/privacy)
+- [GitHub](https://github.com/alivecor)
+
+## API Evangelist rating
+
+**Kin Score 26.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 7.9 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.9** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/alivecor/](https://apis.io/providers/alivecor/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Alivecor: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/alivecor/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
